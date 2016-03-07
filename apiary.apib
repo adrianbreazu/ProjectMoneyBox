@@ -1,0 +1,31 @@
+FORMAT: 1A
+HOST: http://your_ip_goes_here/
+
+# Project Money Box
+
+Project money box is a simple API that is allowing people to temporary store money in a closed box.
+
+## ! Warning !
+(!) this is not a secured box, please do not store valuable objects inside
+
+## State [/state]
+
+
+### Send open request [POST]
+
+It takes a JSON object containing the sensor id and the state open or close
+
++ Request (application/json)
+
+        { "sensor_id" : "_sensor_id_", "state" : "_state_" }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /state
+
+    + Body
+
+            {
+            }
